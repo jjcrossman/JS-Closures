@@ -240,31 +240,21 @@ timeOutCounter();
 	#PROBLEM-08
 \******************************************************************************/
 
-var funcArray = [
+var funcArray = [ ];
 
-  (function () {
-    return 0;
-  })
-  , (function () {
-    return 1;
-  })
-  , (function () {
-    return 2;
-  })
-  , (function () {
-    return 3;
-  })
-  , (function () {
-    return 4;
-  })
-  , (function () {
-    return 5;
-  })
 
-];
+for ( var i = 0; i < 6 ; i++) {
+  var currentI = closure(i);
+  funcArray[i] = currentI;
+}
+
+function closure (i) {
+  return function () {
+    return i;
+  }
+}
 
   // Make the following code work
-
   funcArray[0]() //0
   funcArray[1]() //1
   funcArray[2]() //2

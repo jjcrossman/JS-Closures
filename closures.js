@@ -240,7 +240,7 @@ timeOutCounter();
 	#PROBLEM-08
 \******************************************************************************/
 
-var funcArray = [ ];
+var funcArray = [];
 
 
 for ( var i = 0; i < 6 ; i++) {
